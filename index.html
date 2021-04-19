@@ -13,6 +13,7 @@
       fetch("https://yesno.wtf/api")
         .then((response) => response.json())
         .then((data) => {
+          console.log("test");
           let container = document.getElementById("container");
           container.innerHTML = `
             <h1>${data.answer}</h1>
